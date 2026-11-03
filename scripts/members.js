@@ -15,8 +15,7 @@ for (let i = count; i < TOTAL_MEMBERS; i++) {
   clone.href = `pages/student-${i + 1}.html`;
 
   /* Give it a placeholder photo, name and class */
-  clone.querySelector("img").src =
-    `https://via.placeholder.com/avatar/identicon/user-${i + 1}.png?size=240`;
+  clone.querySelector("img").src = "images/placeholder.svg";
   clone.querySelector("img").alt = "Student Name";
   clone.querySelector("h2").innerHTML = "Student Name";
   clone.querySelector("p").innerHTML = "Class";

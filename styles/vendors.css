@@ -1,8 +1,9 @@
-/* The Font Awesome icons */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css");
+/* The Font Awesome icons (only the solid ones) */
+@import url("../vendor/fontawesome/css/fontawesome.min.css");
+@import url("../vendor/fontawesome/css/solid.min.css");
 
 /* The Swiper slider */
-@import url("https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css");
+@import url("../vendor/swiper/swiper-bundle.min.css");
 
 /* The slider takes the full width, with its dots at the bottom */
 .swiper {

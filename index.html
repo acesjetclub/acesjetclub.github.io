@@ -201,10 +201,7 @@
               ✏️ Your photo: put it in the images/students folder, then change src="..." to its name, e.g. src="images/students/amina.jpg"
               ✏️ Then put your first name in alt="...": it's read out to people who can't see the photo
             -->
-            <img
-              src="https://via.placeholder.com/avatar/identicon/user-1.png?size=240"
-              alt="Student Name"
-            />
+            <img src="images/placeholder.svg" alt="Student Name" />
 
             <!-- ✏️ Your first name only -->
             <h2>Student Name</h2>
@@ -241,10 +238,7 @@
                 ✏️ Your photo: put it in the images/teachers folder, then change src="..." to its name, e.g. src="images/teachers/mr-bello.jpg"
                 ✏️ Then put your name in alt="...": it's read out to people who can't see the photo
               -->
-              <img
-                src="https://via.placeholder.com/avatar/identicon/user-1.png?size=240"
-                alt="Teacher Name"
-              />
+              <img src="images/placeholder.svg" alt="Teacher Name" />
 
               <!-- ✏️ Your name -->
               <h2>Teacher Name</h2>
@@ -259,10 +253,7 @@
                 ✏️ Your photo: put it in the images/teachers folder, then change src="..." to its name
                 ✏️ Then put your name in alt="..."
               -->
-              <img
-                src="https://via.placeholder.com/avatar/identicon/user-2.png?size=240"
-                alt="Teacher Name"
-              />
+              <img src="images/placeholder.svg" alt="Teacher Name" />
 
               <!-- ✏️ Your name -->
               <h2>Teacher Name</h2>
@@ -277,10 +268,7 @@
                 ✏️ Your photo: put it in the images/teachers folder, then change src="..." to its name
                 ✏️ Then put your name in alt="..."
               -->
-              <img
-                src="https://via.placeholder.com/avatar/identicon/user-3.png?size=240"
-                alt="Teacher Name"
-              />
+              <img src="images/placeholder.svg" alt="Teacher Name" />
 
               <!-- ✏️ Your name -->
               <h2>Teacher Name</h2>
@@ -483,7 +471,9 @@
       </footer>
     </div>
 
-    <!-- The JavaScript: it runs the photo slider and adds the other member cards -->
-    <script type="module" src="scripts/main.js"></script>
+    <!-- The JavaScript: the slider library, then the photo slider, then the other member cards -->
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/members.js"></script>
   </body>
 </html>

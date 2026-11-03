@@ -1,5 +1,4 @@
-/* The Swiper slider library */
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
+/* Swiper itself comes from vendor/swiper, loaded just before this file */
 
 /* The slides container and the first slide */
 const wrapper = document.querySelector(".swiper-wrapper");
