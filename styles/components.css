@@ -108,6 +108,11 @@
     object-fit: cover;
     object-position: center;
   }
+
+  /* The class or role under the name */
+  p {
+    color: #777;
+  }
 }
 
 /* Card without a background */

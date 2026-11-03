@@ -19,16 +19,11 @@
   gap: 20px;
 }
 
-/* Set the student card (its box and photo are in components.css) */
+/* Set the student card (its box, photo and class colour are in components.css) */
 .student-card {
   /* Name */
   h2 {
     font-weight: bold;
-  }
-
-  /* Class */
-  p {
-    color: #777;
   }
 
   /* Glow when the mouse is over the card */
