@@ -19,16 +19,8 @@
   gap: 20px;
 }
 
-/* Set the student card (its box is in components.css) */
+/* Set the student card (its box and photo are in components.css) */
 .student-card {
-  /* Image */
-  img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: center;
-  }
-
   /* Name */
   h2 {
     font-weight: bold;

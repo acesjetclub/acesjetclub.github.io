@@ -100,6 +100,14 @@
   text-align: center;
   border: 1px solid #333;
   position: relative;
+
+  /* Photo: fills the card's width, as a square */
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 /* Card without a background */
