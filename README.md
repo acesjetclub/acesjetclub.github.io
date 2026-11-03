@@ -60,3 +60,7 @@ Save everything and close the editor. Check your folder has your first name on i
 | `scripts/`     | The JavaScript: the photo slider and the member cards                                       |
 | `images/`      | The school photos, icons and logo                                                           |
 | `vendor/`      | Fonts and code made by other people, so the site works without the internet. Don't edit it. |
+
+## Copyright
+
+© 2026 ACES Nursery, Primary and Secondary School. All rights reserved. See [LICENSE](LICENSE) for what JET Club members may do with it.
