@@ -1,0 +1,49 @@
+/* Reset: remove the browser's own spacing and styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Scroll smoothly to a section when a link is clicked */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links and spans line up their contents in a row */
+a,
+span {
+  display: inline-flex;
+}
+
+/* Set the font family and colors */
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Set the container width and margin */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page container: the sections, one under the other */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Leave space above a section when a menu link scrolls to it */
+.scroll-section {
+  scroll-margin-top: 40px;
+}

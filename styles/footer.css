@@ -1,0 +1,92 @@
+/* Footer: the school's details and the map, side by side on large screens */
+.footer {
+  border: 1px solid #333;
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Logo */
+  .logo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    /* Logo link: the image above the school's name */
+    a {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* Image */
+    img {
+      width: 150px;
+      height: 120px;
+    }
+  }
+
+  /* Motto, with an icon on its corner (in components.css) */
+  .school-motto {
+    background-color: #ccc;
+    padding: 10px;
+    position: relative;
+
+    /* The word "Motto:" */
+    > span {
+      color: tomato;
+      font-weight: bold;
+    }
+  }
+
+  /* Contacts list */
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* One contact: an icon and its details */
+  .contact-item {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+
+    /* Icon box */
+    > span {
+      border: 1px solid #333;
+      padding: 10px;
+      flex-shrink: 0;
+    }
+
+    /* Details */
+    > div {
+      flex-grow: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+
+      /* Title, e.g. Phone */
+      > h4 {
+        font-weight: bold;
+      }
+
+      /* Value */
+      > p {
+        font-weight: 300;
+      }
+    }
+  }
+
+  /* Logo, motto and contacts, one under the other */
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

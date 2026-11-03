@@ -1,0 +1,27 @@
+/* Hero section: the big welcome part at the top */
+.hero {
+  /* The slider's photos */
+  .hero-image {
+    width: 100%;
+    aspect-ratio: 16/14;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #333;
+    padding: 20px;
+  }
+
+  /* The second button, with an icon on its corner */
+  .hero-secondary-button {
+    position: relative;
+
+    /* The icon (its picture is in components.css) */
+    &::before {
+      position: absolute;
+      bottom: 0;
+      right: 0%;
+      transform: translate(50%, 50%);
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

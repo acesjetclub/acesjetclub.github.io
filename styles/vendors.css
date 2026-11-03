@@ -1,0 +1,17 @@
+/* The Font Awesome icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css");
+
+/* The Swiper slider */
+@import url("https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css");
+
+/* The slider takes the full width, with its dots at the bottom */
+.swiper {
+  width: 100%;
+  --swiper-pagination-bottom: 0;
+}
+
+/* Each slide leaves room below for the dots */
+.swiper-slide {
+  padding: 2px;
+  padding-bottom: 20px;
+}

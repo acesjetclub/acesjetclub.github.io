@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The title of the page, shown on the browser tab -->
+    <title>Aces Nursery, Primary and Secondary School</title>
+    <!-- The link to the CSS file (it loads every file in the styles folder) -->
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <!--
+      Parts marked with ✏️ are the ones you edit.
+      Students: edit only "Student Card 1" below, then your own page in pages/student-1.html.
+      Teachers: edit only your own card in "JET Club Teachers".
+    -->
+
+    <!-- The container of the page -->
+    <div class="container page-container">
+      <!-- Header -->
+      <div id="header" class="header scroll-section">
+        <!-- Logo -->
+        <h1 class="logo">
+          <a href="#header">
+            <img
+              src="images/logo-cropped.png"
+              alt="Aces Nursery, Primary and Secondary School Logo"
+            />
+            Aces Nursery, Primary <br />and Secondary School
+          </a>
+        </h1>
+
+        <!-- Menu: each link jumps to a part of this page -->
+        <nav>
+          <a href="#header">Home</a>
+          <a href="#about">About</a>
+          <a href="#jet-club">JET Club</a>
+        </nav>
+      </div>
+
+      <!-- Hero Section: the big welcome part at the top -->
+      <div class="hero page-section">
+        <!-- Welcome text -->
+        <div class="section-main">
+          <!-- Heading -->
+          <h2>Building Bright Minds. Inspiring Future Innovators.</h2>
+
+          <!-- Paragraph -->
+          <p>
+            At ACES Nursery, Primary and Secondary School, we believe every
+            child has the potential to learn, create, and make a difference.
+            Through a learning environment that encourages curiosity, discovery,
+            and personal growth, we inspire students to look beyond the
+            classroom and explore what's possible.
+          </p>
+
+          <!-- Buttons -->
+          <div class="section-buttons">
+            <a href="#about" class="btn btn-primary">Discover ACES</a>
+            <a href="#jet-club" class="btn btn-secondary hero-secondary-button"
+              >Explore the JET Club</a
+            >
+          </div>
+        </div>
+
+        <!-- School photo slider: the other school photos are added by scripts/swiper.js -->
+        <div class="swiper">
+          <!-- The slides -->
+          <div class="swiper-wrapper">
+            <!-- First slide -->
+            <div class="swiper-slide">
+              <img
+                class="hero-image"
+                src="images/school/school-1.jpeg"
+                alt="Aces Nursery, Primary and Secondary School Background"
+              />
+            </div>
+          </div>
+
+          <!-- The dots under the slider -->
+          <div class="swiper-pagination"></div>
+
+          <!-- The previous and next arrows -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about" class="page-section reversed scroll-section">
+        <!-- Section text -->
+        <div class="section-main">
+          <!-- Heading -->
+          <h2 class="section-heading">About ACES</h2>
+
+          <!-- First paragraph -->
+          <p>
+            At ACES Nursery, Primary and Secondary School, education is about
+            more than what students learn from textbooks. It is about developing
+            confidence, encouraging curiosity, nurturing individual abilities,
+            and helping every learner discover their potential.
+          </p>
+
+          <!-- Second paragraph -->
+          <p>
+            We believe students should have opportunities to ask questions,
+            explore their interests, express their ideas, and develop the skills
+            they need to navigate an ever-changing world.
+          </p>
+        </div>
+
+        <!-- Section image -->
+        <div class="section-image">
+          <img src="images/school/school-9.jpeg" alt="Aces Playground" />
+        </div>
+      </section>
+
+      <!-- JET Club Section -->
+      <section id="jet-club" class="jet-club scroll-section">
+        <!-- Text and icons -->
+        <div class="jet-wrapper">
+          <!-- Section text -->
+          <div class="section-main">
+            <!-- Heading -->
+            <h2 class="section-heading">Where curiosity meets creativity</h2>
+
+            <!-- First paragraph -->
+            <p>
+              The JET Club is a student community within ACES dedicated to
+              exploring science, technology, engineering, and creativity.
+            </p>
+
+            <!-- Second paragraph -->
+            <p>
+              It provides an opportunity for students to go beyond theoretical
+              learning and engage with ideas through practical activities,
+              collaborative projects, experimentation, and presentations.
+            </p>
+
+            <!-- Third paragraph -->
+            <p>
+              From discovering how technology works to building creative
+              solutions, members are encouraged to think independently, work
+              together, and develop the confidence to bring their ideas to life.
+            </p>
+
+            <!-- Button -->
+            <div>
+              <a href="#jet-club-members" class="btn btn-primary"
+                >Meet the Innovators</a
+              >
+            </div>
+          </div>
+
+          <!-- Icon blocks -->
+          <div class="jet-blocks">
+            <div><img src="images/icons/icon-1.png" alt="" /></div>
+            <div><img src="images/icons/icon-2.png" alt="" /></div>
+            <div><img src="images/icons/icon-3.png" alt="" /></div>
+            <div><img src="images/icons/icon-4.png" alt="" /></div>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="images-grid">
+          <!-- First image -->
+          <div class="section-image first-image">
+            <img src="images/school/school-7.jpeg" alt="Aces" />
+          </div>
+
+          <!-- Second image -->
+          <div class="section-image second-image">
+            <img src="images/school/school-8.jpeg" alt="Aces" />
+          </div>
+        </div>
+      </section>
+
+      <!-- JET Club Members -->
+      <section id="jet-club-members" class="jet-club-members scroll-section">
+        <!-- Section text -->
+        <div class="section-main">
+          <!-- Heading -->
+          <h2 class="students-heading">Meet the 2026 JET Club Members</h2>
+
+          <!-- Paragraph -->
+          <p class="students-paragraph">
+            Our curious minds, creative thinkers, and young innovators of 2026.
+            Get to know our JET Club members, explore their interests, discover
+            their ideas, and see how their passion for science, technology,
+            engineering, and creativity is shaping the future.
+          </p>
+        </div>
+
+        <!-- Students Grid: the other cards are added by scripts/members.js, so only edit Student Card 1 -->
+        <div class="students-grid">
+          <!-- ✏️ Student Card 1: students, this is the card you edit -->
+          <a href="pages/student-1.html" class="student-card">
+            <!-- ✏️ Your photo: put it in the images/students folder, then change src="..." to its name, e.g. src="images/students/amina.jpg" -->
+            <img
+              src="https://via.placeholder.com/avatar/identicon/user-1.png?size=240"
+              alt="Student Image"
+            />
+
+            <!-- ✏️ Your first name only -->
+            <h2>Student Name</h2>
+
+            <!-- ✏️ Your class, e.g. JSS 2 -->
+            <p>Class</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- JET Club Teachers -->
+      <section id="jet-club-teachers" class="jet-club-teachers scroll-section">
+        <!-- Section text -->
+        <div class="section-main">
+          <!-- Heading -->
+          <h2 class="students-heading">
+            The People Guiding <br />Our Young Innovators
+          </h2>
+
+          <!-- Paragraph -->
+          <p class="students-paragraph">
+            Dedicated to encouraging curiosity, supporting practical learning,
+            and helping students discover their potential through science and
+            technology.
+          </p>
+        </div>
+
+        <!-- Teachers Grid -->
+        <div class="teachers-grid-wrapper">
+          <div class="teachers-grid">
+            <!-- ✏️ Teacher Card 1 -->
+            <div class="card">
+              <!-- ✏️ Your photo: put it in the images/teachers folder, then change src="..." to its name, e.g. src="images/teachers/mr-bello.jpg" -->
+              <img
+                src="https://via.placeholder.com/avatar/identicon/user-1.png?size=240"
+                alt="Teacher Image"
+              />
+
+              <!-- ✏️ Your name -->
+              <h2>Teacher Name</h2>
+
+              <!-- ✏️ Your role, e.g. Physics Teacher -->
+              <p>Role</p>
+            </div>
+
+            <!-- ✏️ Teacher Card 2 -->
+            <div class="card">
+              <!-- ✏️ Your photo: put it in the images/teachers folder, then change src="..." to its name -->
+              <img
+                src="https://via.placeholder.com/avatar/identicon/user-2.png?size=240"
+                alt="Teacher Image"
+              />
+
+              <!-- ✏️ Your name -->
+              <h2>Teacher Name</h2>
+
+              <!-- ✏️ Your role -->
+              <p>Role</p>
+            </div>
+
+            <!-- ✏️ Teacher Card 3 -->
+            <div class="card">
+              <!-- ✏️ Your photo: put it in the images/teachers folder, then change src="..." to its name -->
+              <img
+                src="https://via.placeholder.com/avatar/identicon/user-3.png?size=240"
+                alt="Teacher Image"
+              />
+
+              <!-- ✏️ Your name -->
+              <h2>Teacher Name</h2>
+
+              <!-- ✏️ Your role -->
+              <p>Role</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore Section -->
+      <section class="explore-section">
+        <!-- Heading -->
+        <h3 class="section-heading">
+          Exploring ideas. <br />Discovering possibilities.
+        </h3>
+
+        <!-- Paragraph -->
+        <p>
+          The JET Club encourages students to explore different areas of
+          science, technology, and innovation. These areas provide opportunities
+          to learn new skills, experiment with ideas, and discover individual
+          interests.
+        </p>
+
+        <!-- Explore grid -->
+        <div class="explore-grid">
+          <!-- Technology -->
+          <div class="explore-item">
+            <div class="explore-icon first">
+              <i class="fa-solid fa-computer"></i>
+            </div>
+            <h3>Technology & Computing</h3>
+            <p>
+              Exploring computers, programming, digital tools, and how
+              technology shapes our world.
+            </p>
+          </div>
+
+          <!-- Science -->
+          <div class="explore-item">
+            <div class="explore-icon second">
+              <i class="fa-solid fa-flask"></i>
+            </div>
+            <h3>Science & Discovery</h3>
+            <p>
+              Asking questions, conducting experiments, and understanding the
+              world around us.
+            </p>
+          </div>
+
+          <!-- Engineering -->
+          <div class="explore-item">
+            <div class="explore-icon third">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>Engineering & Design</h3>
+            <p>
+              Designing, building, testing, and improving ideas through
+              practical activities.
+            </p>
+          </div>
+
+          <!-- Creativity -->
+          <div class="explore-item">
+            <div class="explore-icon fourth">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Creativity & Innovation</h3>
+            <p>
+              Using imagination and creative thinking to develop new ideas and
+              solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing Section -->
+      <section class="closing-section">
+        <!-- Rocket and pencil pictures -->
+        <span class="overlay rocket"></span>
+        <span class="overlay pencil"></span>
+
+        <!-- Heading -->
+        <h5>The future starts with curiosity.</h5>
+
+        <!-- First paragraph -->
+        <p>
+          Every student has an idea worth exploring, a question worth asking,
+          and the potential to create something meaningful.
+        </p>
+
+        <!-- Second paragraph -->
+        <p>
+          At ACES JET Club, we are learning, experimenting, and growing together
+          — one idea at a time.
+        </p>
+
+        <!-- Closing statement -->
+        <p class="closing-statement">Think. Explore. Create. Inspire.</p>
+
+        <!-- Button to the school's website -->
+        <a target="_blank" href="https://acesnps.com" class="btn btn-primary"
+          >Enroll now</a
+        >
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer scroll-section">
+        <!-- Logo, motto and contacts -->
+        <div class="footer-left">
+          <!-- Logo -->
+          <h5 class="logo">
+            <a href="#header">
+              <img
+                src="images/logo-cropped.png"
+                alt="Aces Nursery, Primary and Secondary School Logo"
+              />
+              Aces Nursery, Primary <br />and Secondary School
+            </a>
+          </h5>
+
+          <!-- Motto -->
+          <p class="school-motto">
+            <span>Motto:</span> Adding value to education
+          </p>
+
+          <!-- Contacts -->
+          <div class="contacts">
+            <!-- Phone -->
+            <div class="contact-item">
+              <span>
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <div>
+                <h4>Phone</h4>
+                <p>
+                  <a href="tel:+2348108213640">081-0821-3640</a>,
+                  <a href="tel:+2347037759538">070-3775-9538</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-item">
+              <span>
+                <i class="fa-solid fa-location-pin"></i>
+              </span>
+              <div>
+                <h4>Address</h4>
+                <p>
+                  2 Gongola Street (Off Moshood Abiola Way) Area 2,
+                  Garki-Abuja<br />
+                  P.O Box 2710, Garki, Abuja.
+                </p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <span>
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a target="_blank" href="mailto:acesnps@gmail.com"
+                    >acesnps@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- Website -->
+            <div class="contact-item">
+              <span>
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <div>
+                <h4>Website</h4>
+                <p>
+                  <a target="_blank" href="https://acesnps.com/">acesnps.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- School map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!4v1793526375212!6m8!1m7!1sQVEplzNloSr-mXLSO9FVAg!2m2!1d9.036221245235888!2d7.47975306255272!3f354.2283273613954!4f7.389552866670996!5f0.7820865974627469"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </footer>
+    </div>
+
+    <!-- The JavaScript: it runs the photo slider and adds the other member cards -->
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

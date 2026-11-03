@@ -1,0 +1,61 @@
+/* JET Club section */
+.jet-club {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  /* The text and the icon blocks, side by side on large screens */
+  .jet-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Section text */
+  .section-main {
+    gap: 20px;
+
+    /* Paragraph */
+    p {
+      max-width: 700px;
+    }
+  }
+
+  /* The two images, side by side on wider screens */
+  .images-grid {
+    display: grid;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Second image: rounded on another corner */
+    .section-image.second-image {
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 50%;
+
+      /* Its icon sits on the bottom edge */
+      &::before {
+        top: 100%;
+      }
+
+      @media (min-width: 768px) {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 50%;
+      }
+    }
+  }
+}
+
+/* JET Club icon blocks: two columns on large screens */
+.jet-blocks {
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

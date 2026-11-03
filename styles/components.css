@@ -1,0 +1,167 @@
+/* Button */
+.btn {
+  border: 1px solid black;
+  padding: 10px;
+  text-transform: uppercase;
+
+  /* Main button */
+  &.btn-primary {
+    background-color: #68b8b5;
+  }
+
+  /* Second button */
+  &.btn-secondary {
+    background-color: white;
+  }
+}
+
+/* A section with text and an image side by side on large screens */
+.page-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    /* Reversed: the image goes on the left */
+    &.reversed .section-image {
+      grid-row-start: 1;
+      grid-column-start: 1;
+    }
+  }
+}
+
+/* Section headings */
+.section-heading,
+.section-main h2,
+.students-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+/* The text of a section */
+.section-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 0px;
+
+  /* Paragraph */
+  p {
+    font-weight: 300;
+  }
+
+  /* Buttons */
+  .section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* A framed image with a rounded corner */
+.section-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #333;
+  padding: 20px;
+  position: relative;
+  border-top-left-radius: 50%;
+
+  /* The icon on the frame */
+  &::before {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Image */
+  img {
+    width: 100%;
+    aspect-ratio: 16/14;
+    border-radius: inherit;
+  }
+}
+
+/* Cards: the teacher cards and the student cards */
+.card,
+.student-card {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #333;
+  position: relative;
+}
+
+/* Card without a background */
+.card.card-transparent {
+  background-color: transparent;
+}
+
+/* Icon blocks: the grid of small icons */
+.jet-blocks,
+.student-details-blocks {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid #333;
+  max-width: 350px;
+  justify-self: center;
+
+  /* Each block */
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #333;
+
+    /* Icon */
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Icon decorations: the small icon-3 picture */
+.hero-secondary-button::before,
+.school-motto::before,
+.student-about::before,
+.student-hobbies-list li::before {
+  content: "";
+  background-image: url("../images/icons/icon-3.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Icon decorations: icon-3 pinned to the top right corner */
+.school-motto::before,
+.student-about::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+/* Icon decorations: the icon-4 picture centred on a top edge */
+.section-image::before,
+.explore-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/icons/icon-4.png");
+  background-position: center;
+  background-size: contain;
+}

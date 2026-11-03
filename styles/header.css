@@ -1,0 +1,44 @@
+/* Header: the logo and the menu, side by side on wider screens */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  /* Logo */
+  .logo {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+
+    /* Logo link: the image and the school's name */
+    a {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    /* Image */
+    img {
+      height: 40px;
+    }
+  }
+
+  /* Menu */
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    /* Menu links */
+    & > a {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

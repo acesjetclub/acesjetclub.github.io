@@ -1,0 +1,25 @@
+/* Teachers section */
+.jet-club-teachers {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centres the teachers grid */
+.teachers-grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Set the teachers grid */
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 768px;
+  min-width: 0;
+
+  /* Teacher's name */
+  .card h2 {
+    font-weight: bold;
+  }
+}

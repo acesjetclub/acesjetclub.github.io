@@ -1,0 +1,90 @@
+/* Closing section */
+.closing-section {
+  border: 1px solid #333;
+  background-color: #fff87d;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+
+  /* Keep the text above the circles and pictures */
+  & * {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* The rocket and pencil pictures, shown on wider screens */
+  .overlay {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    z-index: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    /* Rocket */
+    &.rocket {
+      top: 60px;
+      left: 20px;
+      background-image: url("../images/icons/rocket.png");
+    }
+
+    /* Pencil */
+    &.pencil {
+      right: 20px;
+      background-image: url("../images/icons/pencil.png");
+    }
+  }
+
+  /* The two half circles at the bottom corners */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 70%;
+    aspect-ratio: 1/1;
+    min-width: 100px;
+    z-index: 0;
+  }
+
+  /* Orange circle on the left */
+  &::before {
+    left: 0;
+    border-radius: 50%;
+    background-color: #f85c20;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Blue circle on the right */
+  &::after {
+    right: 0;
+    border-radius: 50%;
+    background-color: #9acce0;
+    transform: translate(50%, -50%);
+  }
+
+  /* Heading */
+  h5 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  /* Closing statement, in a handwriting font */
+  .closing-statement {
+    font-family: "Schoolbell";
+    font-size: 2rem;
+  }
+}
