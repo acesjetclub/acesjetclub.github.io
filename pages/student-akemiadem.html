@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ✏️ The title of the page, shown on the browser tab: put your first name -->
+    <title>Akemiadem - Aces Nursery, Primary and Secondary School</title>
+    <!-- The link to the CSS file (../ means "go up one folder") -->
+    <link rel="stylesheet" href="../styles/index.css" />
+    <!-- The school crest, shown on the browser tab -->
+    <link rel="icon" href="../images/logo-cropped.webp" />
+  </head>
+  <body>
+    <!--
+      This is your own page. Parts marked with ✏️ are the ones you edit.
+      Don't forget the ✏️ title at the very top, inside <head>: it's the name on the browser tab.
+      This file is in the pages folder, so paths to other folders start with ../
+    -->
+
+    <!-- The container of the page -->
+    <div class="container page-container">
+      <!-- Header -->
+      <div id="header" class="header scroll-section">
+        <!-- Logo -->
+        <h1 class="logo">
+          <a href="../index.html#header">
+            <img
+              src="../images/logo-cropped.webp"
+              alt="Aces Nursery, Primary and Secondary School Logo"
+            />
+            Aces Nursery, Primary <br />and Secondary School
+          </a>
+        </h1>
+
+        <!-- Menu: each link goes back to a part of the home page -->
+        <nav>
+          <a href="../index.html#header">Home</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#jet-club">JET Club</a>
+        </nav>
+      </div>
+
+      <!-- Student details -->
+      <div class="student-details-wrapper">
+        <!-- Icon blocks -->
+        <div class="student-details-blocks">
+          <div><img src="../images/icons/icon-3.webp" alt="" /></div>
+          <div><img src="../images/icons/icon-7.webp" alt="" /></div>
+          <div><img src="../images/icons/icon-8.webp" alt="" /></div>
+          <div><img src="../images/icons/icon-9.webp" alt="" /></div>
+        </div>
+
+        <!-- Your card -->
+        <div class="student-details-card">
+          <!--
+            ✏️ Your photo: put it in the images/students folder, then change src="..." to its name, e.g. src="../images/students/amina.jpg"
+            ✏️ Then put your first name in alt="...": it's read out to people who can't see the photo
+          -->
+          <img
+            class="student-image"
+            src="../images/students/akemiadem.webp"
+            alt="Akemiadem"
+          />
+
+          <!-- Your details -->
+          <div class="student-details">
+            <!-- ✏️ Your first name only -->
+            <h2 class="student-name">Akemiadem</h2>
+
+            <!-- ✏️ Your class, e.g. JSS 2 -->
+            <p class="student-class">SS1</p>
+
+            <!-- ✏️ What you want to become -->
+            <p class="student-about">
+              I want to become a Neurologist in the future.
+            </p>
+
+            <!-- Heading -->
+            <h3 class="student-hobbies-heading">Things I like</h3>
+
+            <!-- ✏️ Things you like: one <li> for each thing, add or remove as many as you want -->
+            <ul class="student-hobbies-list">
+              <li>Reading</li>
+              <li>Biology</li>
+              <li>Playing games</li>
+              <li>Singing</li>
+              <li>Dancing</li>
+              <li>Editing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to homepage -->
+      <div>
+        <a href="../index.html#jet-club-members" class="btn btn-primary"
+          >Go back to homepage</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
