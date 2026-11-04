@@ -38,13 +38,13 @@
     &.rocket {
       top: 60px;
       left: 20px;
-      background-image: url("../images/icons/rocket.png");
+      background-image: url("../images/icons/rocket.webp");
     }
 
     /* Pencil */
     &.pencil {
       right: 20px;
-      background-image: url("../images/icons/pencil.png");
+      background-image: url("../images/icons/pencil.webp");
     }
   }
 

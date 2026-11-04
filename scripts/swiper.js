@@ -15,7 +15,7 @@ for (let i = START; i < END; i++) {
 
   /* Point its image at the next school photo */
   const img = root.querySelector("img");
-  img.src = `images/school/school-${i + 1}.jpeg`;
+  img.src = `images/school/school-${i + 1}.webp`;
 
   /* Add it to the slider */
   wrapper.appendChild(root);
